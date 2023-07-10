@@ -5,14 +5,14 @@ function notifyMe() {
         if (Notification.permission === 'granted') {
             new Notification('Hi there!', {
                 body: 'How are you doing?',
-                icon: 'http://bit.ly/2s4r0qw'
+                icon: 'https://cdn-icons-png.flaticon.com/512/4980/4980801.png'
             });
         } else {
             Notification.requestPermission().then(userPermission => {
                 if (userPermission === 'granted') {
                     new Notification('Hi there!', {
                         body: 'You have a new message!',
-                        icon: 'http://bit.ly/2s4r0qw'
+                        icon: 'https://cdn-icons-png.flaticon.com/512/4980/4980801.png'
                     });
                 } else {
                     alert('User denied permission.');
